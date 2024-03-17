@@ -26,8 +26,8 @@
     "onCommand:jrieken.backspaceLeft"
   ],
   "devDependencies": {
-    "typescript": "^2.2.2",
-    "vscode": "^1.1.0"
+    "typescript": "2.2.2",
+    "vscode": "1.1.0"
   },
   "icon": "resources/backspace.png"
 }
