@@ -34,7 +34,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install && tsc"
   },
   "devDependencies": {
-    "typescript": "2.2.2",
+    "typescript": "5.4.2",
     "vscode": "1.1.0"
   }
 }
