@@ -2,17 +2,24 @@
   "name": "backspace-plusplus",
   "displayName": "Backspace++",
   "version": "0.0.17",
-  "description": "Erase spaces by multiples of the tab size.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vscode-backspace.git"
-  },
   "publisher": "jrieken",
-  "main": "./out/extension",
-  "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install && tsc",
-    "vscode:prepublish": "tsc"
+  "description": "Erase spaces by multiples of the tab size.",
+  "icon": "resources/backspace.png",
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
+  "repository": {
+    "url": "https://github.com/Microsoft/vscode-backspace.git",
+    "type": "git"
   },
+  "engines": {
+    "vscode": "^1.10.0"
+  },
+  "main": "./out/extension",
+  "activationEvents": [
+    "onCommand:jrieken.backspaceLeft"
+  ],
   "contributes": {
     "keybindings": [
       {
@@ -22,12 +29,12 @@
       }
     ]
   },
-  "activationEvents": [
-    "onCommand:jrieken.backspaceLeft"
-  ],
-  "devDependencies": {
-    "typescript": "2.2.2",
-    "vscode": "1.1.0"
+  "scripts": {
+    "vscode:prepublish": "tsc",
+    "postinstall": "node ./node_modules/vscode/bin/install && tsc"
   },
-  "icon": "resources/backspace.png"
+  "devDependencies": {
+    "typescript": "^2.2.2",
+    "vscode": "^1.1.0"
+  }
 }
