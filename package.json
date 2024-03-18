@@ -14,7 +14,7 @@
     "type": "git"
   },
   "engines": {
-    "vscode": "^1.10.0"
+    "vscode": "1.10.0"
   },
   "main": "./out/extension",
   "activationEvents": [
@@ -34,7 +34,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install && tsc"
   },
   "devDependencies": {
-    "typescript": "^2.2.2",
-    "vscode": "^1.1.0"
+    "typescript": "2.2.2",
+    "vscode": "1.1.0"
   }
 }
