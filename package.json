@@ -1,29 +1,14 @@
 {
-	"name": "backspace-plusplus",
-	"displayName": "Backspace++",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Erase spaces by multiples of the tab size.",
-	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
-	"bugs": {
-		"url": "https://github.com/CodeEditorLand/Foundation/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
+	"activationEvents": [
+		"onCommand:jrieken.backspaceLeft"
+	],
 	"author": {
-		"name": "Playform",
 		"email": "Hello@Playform.Cloud",
+		"name": "Playform",
 		"url": "https://playform.cloud"
 	},
-	"type": "module",
-	"main": "./out/extension",
-	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install && tsc",
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
-		"vscode:prepublish": "tsc"
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
 	},
 	"contributes": {
 		"keybindings": [
@@ -34,16 +19,31 @@
 			}
 		]
 	},
-	"activationEvents": [
-		"onCommand:jrieken.backspaceLeft"
-	],
+	"description": "Erase spaces by multiples of the tab size.",
 	"devDependencies": {
 		"typescript": "5.4.2",
-		"typescript-esbuild": "0.4.5",
+		"typescript-esbuild": "",
 		"vscode": "1.1.0"
 	},
+	"displayName": "Backspace++",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"icon": "resources/backspace.png",
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "./out/extension",
+	"name": "backspace-plusplus",
+	"private": false,
 	"publishConfig": {
 		"access": "public"
 	},
-	"icon": "resources/backspace.png"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install && tsc",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"vscode:prepublish": "tsc"
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
