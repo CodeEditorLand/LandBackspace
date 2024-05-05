@@ -4,26 +4,28 @@
 	"version": "0.0.1",
 	"private": false,
 	"description": "Erase spaces by multiples of the tab size.",
-	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandBackSpace#readme",
 	"bugs": {
-		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandBackSpace/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandBackSpace.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "Playform",
-		"email": "Hello@Playform.Cloud",
-		"url": "https://playform.cloud"
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
 	},
 	"type": "module",
 	"main": "./out/extension",
 	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install && tsc",
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
-		"vscode:prepublish": "tsc"
+		"Document": "Document 'Source/**/*.ts'",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"contributes": {
 		"keybindings": [
@@ -38,9 +40,8 @@
 		"onCommand:jrieken.backspaceLeft"
 	],
 	"devDependencies": {
-		"typescript": "5.4.2",
-		"typescript-esbuild": "0.4.5",
-		"vscode": "1.1.0"
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6"
 	},
 	"publishConfig": {
 		"access": "public"
