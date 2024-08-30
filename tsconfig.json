@@ -1,9 +1,0 @@
-{
-	"compilerOptions": {
-		"strictNullChecks": true,
-		"module": "commonjs",
-		"outDir": "out",
-		"sourceMap": true
-	},
-	"exclude": ["node_modules"]
-}
