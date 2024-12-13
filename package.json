@@ -1,7 +1,9 @@
 {
-	"activationEvents": [
-		"onCommand:jrieken.backspaceLeft"
-	],
+	"name": "backspace-plusplus",
+	"displayName": "Backspace++",
+	"description": "Erase spaces by multiples of the tab size.",
+	"main": "./out/extension",
+	"scripts": {},
 	"contributes": {
 		"keybindings": [
 			{
@@ -11,12 +13,10 @@
 			}
 		]
 	},
+	"activationEvents": [
+		"onCommand:jrieken.backspaceLeft"
+	],
 	"dependencies": {},
-	"description": "Erase spaces by multiples of the tab size.",
 	"devDependencies": {},
-	"displayName": "Backspace++",
-	"icon": "resources/backspace.png",
-	"main": "./out/extension",
-	"name": "backspace-plusplus",
-	"scripts": {}
+	"icon": "resources/backspace.png"
 }
